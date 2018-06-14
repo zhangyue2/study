@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>angularjs生命周期</title>
+  <script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
+</head>
+<body>
+   
+  <div ng-app="app" ng-controller="ctrl">
+    <p>hello {{data}}</p>
+    <input type="text" ng-model="data">
+    <input type="number" pattern="^[1-5][0-9]$">
+  </div>
+  <script type="text/javascript">
+    angular.module('app',[]);
+    angular.module('app')
+      .config(function(){
+        console.log('config函数')
+      })
+      .run(function(){
+        console.log('run函数')
+      })
+      .controller('ctrl', function($scope){
+        console.log('controller函数')
+        $scope.data = 'world'
+      })
+
+      var singleton = function(){
+        var privateVariable = 10;
+        function privateFunction(){
+          return false;
+        }
+
+        var object = new CustomType();
+
+        object.publicProperty = true;
+
+        object.publicMethod = function(){
+          privateVariable++;
+          return privateFunction();
+        }
+
+        return object;
+      }
+  </script>
+</body>
+</html>

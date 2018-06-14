@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+		//获取窗口大小
+		var pageWidth = window.innerWidth,
+				pageHeight = window.innerHeight;
+
+		if (typeof pageWidth != 'number') {
+			if (document.compatMode != 'CSS1Compat') {
+				pageWidth = document.documentElement.clientWidth;
+				pageHeight = document.documentElement.clientHeight;
+			}else{
+				pageWidth = document.body.clientWidth;
+				pageHeight = document.body.clientHeight;
+			}
+		}
+
+		//调整浏览器窗口的大小
+		//resizeTo 接收 浏览器窗口的新宽度和新高度
+		//resizeBy 接收 新窗口和原窗口的宽度和高度之差
+		window.resizeTo(100,100) //调整到100*100
+		window.resizeBy(100,50) //调整到200*150
+		window.resizeTo(300,300)//调整到300*300	
+
+		// 检测window.open被屏蔽
+		var blocked = false;
+		try{
+			var wroxWin = window.open('https://www.baidu.com','_blank');
+			if (wroxWin == null) {
+				blocked = true;
+			}catch(ex){
+				blocked = true;
+			}
+		}
+		if (blocked) {
+			alert('The popup was blocked');
+		}
+
+		//
+		if (confirm('Are you sure?')) {
+			alert("I'm so glad you're sure! ")
+		}else{
+			alert()
+		}
+	</script>
+</body>
+</html>

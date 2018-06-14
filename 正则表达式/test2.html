@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	  <script type="text/javascript">
+	  	var loca = 'https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=1';
+        var reg = /(?!(\?|&)[A-Za-z0-9_]+=[A-Za-z0-9\-_]+)/g
+//      var reg = /^ie/g
+        var local = loca.replace(reg,'')
+        console.log(local)
+	  </script>
+	</body>
+</html>

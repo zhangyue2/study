@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+
+      var params = {
+        p: '',
+        q: ''
+      }
+      // /(?<=[&|?])\w+=[\w-]*/ 
+      var str = 'u.com/s?p=utf-8&qq=8&q=1&wefwef=f32453422f'
+      function getParams (params,url){
+        var params1 = {},reg = '';
+        for(item in params){
+          reg = '(\\\?|&)' + item + '=[\\\w\\\-]+';
+          var reg1 = new RegExp(reg);
+          params1[item] = url.match(reg1)[0].split('=')[1];
+        }
+        return params1;
+      }
+      
+      var obj1 = getParams(params,str);
+      console.log(obj1)
+    </script>
+  </body>
+</html>

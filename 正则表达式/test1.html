@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	  <script type="text/javascript">
+//	  	window.location.search
+        
+//      var params = {
+//        q: '',
+//        p: ''
+//      }
+        
+//      function createReg (params){
+////        var regstr = '\\\(?|&)';
+//        var regstr = '';
+//        for(item in params){
+//          console.log(item);
+//          regstr = regstr + '(\\\?|&)' + item + '=[A-Za-z0-9\\\-_]+';
+//        }
+////        regstr = regstr.slice(0,regstr.length-1)
+//        return new RegExp(regstr)
+//      }
+//      
+//      var str = createReg(params)
+//      console.log(str)
+        
+        var loca = 'https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=1';
+        var reg = /(\?|&)[A-Za-z0-9_]+=[A-Za-z0-9\-_]+/g
+        local = loca.replace(reg,'')
+        console.log(local)
+	  </script>
+	</body>
+</html>

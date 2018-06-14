@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var numbers = [1,2,3,4,5,6,3,4,1];
+
+		var everyResult = numbers.every(function (item,index,array) {
+			return item > 2;
+		});
+
+		console.log(everyResult);
+
+		var someResult = numbers.some(function(item,index,array){
+			return item > 2;
+		});
+		console.log(someResult);
+
+		var filterResult = numbers.filter(function(item,index,array){
+			return item > 2;
+		});
+
+		console.log(filterResult);
+
+		function 
+	</script>
+</body>
+</html>
+		var mapResult = numbers.map(function(item,index,array) {
+			return item * 2;
+		})
+
+		console.log(mapResult);
+
+		var sum = numbers.reduce(function(pre,cur,index,array){
+			return pre + cur;
+		})
+
+		console.log(sum)
+
+		//数组去重的6种方法

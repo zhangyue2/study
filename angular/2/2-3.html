@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Document</title>
+	<script src="../js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body ng-app>
+	<div ng-controller="myCtrl">
+	  <h1>Hello {{clock.now}} !</h1>
+	</div>
+	<script type="text/javascript">
+		function myCtrl($scope){
+		  $scope.clock = {
+		    now: new Date()
+		  }
+		  var updateClock = function() {
+		    $scope.clock.now = new Date()
+		  }
+		  setInterval(function() {
+		    $scope.$apply(updateClock);
+		  }, 1000)
+		  updateClock();
+		}
+		function myCtrl($sc) {
+            
+        }
+	</script>
+</body>
+</html>

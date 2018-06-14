@@ -1,0 +1,39 @@
+<!-- navigator对象.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		//检测插件(IE中无效)
+
+		function hasPlugin(name) {
+			name = name.toLowerCase();
+			for(var i = 0; i < navigator.plugins.length; i++){
+				if (navigator.plugins[i].name.toLowerCase().indexOf(name) > -1) {
+					return true;
+				}
+			}
+			return false;
+		}
+
+		//检测flash
+		alert(hasPlugin('Flash'));
+
+		//检测IE中的插件
+		function hasIEPlugin(name){
+			try{
+				new ActiveXObject(name);
+				return true;
+			}catch{
+				return false;
+			}
+		}
+
+		//检测flash
+		alert(hasIEPlugin("ShockwavaFlash.ShockwaveFlash"))
+	</script>
+</body>
+</html>

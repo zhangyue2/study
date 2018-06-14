@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="moment.js"></script>
+</head>
+<body>
+	<p></p>
+	
+  <script type="text/javascript">
+		var day = moment('1995-02-08T09')
+		
+		document.querySelector('p').innerText = day
+
+		function factorial (num){
+			if (num > 2) {
+				return 3
+			}
+			return num++ * factorial(num);
+		}
+		console.log(factorial(1))
+
+  </script>
+</body>
+</html>

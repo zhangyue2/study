@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>作用域链</title>
+</head>
+<body>
+  <script type="text/javascript">
+    // 'use strict';
+
+    var color = 'blue';
+    function changeColor() {
+      if (color == 'blue') {
+        color = 'red';
+      } else {
+        color = 'blue';
+      }
+    }
+    changeColor();
+    console.log(color);
+
+    function buildUrl(){
+      var qs = '?debug=true';
+
+      with(location){
+        var url = href + qs;
+      }
+      return url;
+    }
+
+    console.log(buildUrl())
+
+    if(true){
+      var color1 = 'blue';
+    }
+    console.log(color1)
+
+    function compare(value1,value2){
+      if (value1 < value2) {
+        return -1;
+      }else if (value1 == value2) {
+        return 0;
+      }else{
+        return 1;
+      }
+    }
+
+    function comp(value1,value2){
+      return value2 - value1
+    }
+    var values = [0,1,5,10,15]
+    values.sort(comp);
+    console.log(values);
+  </script>
+
+</body>
+</html>

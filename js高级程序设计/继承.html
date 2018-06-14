@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>继承</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// 1.原型链
+		function SuperType(){
+			this.property = true;
+		}
+		SuperType.prototype.getSuperValue = function(){
+			return this.property;
+		}
+		function SubType(){
+			this.subproperty = false;
+		}
+		SubType.prototype = new SuperType();
+		SubType.prototype.getSubValue = function(){
+			return this.subproperty;
+		}
+		var instance = new SubType();
+		// alert(instance.getSuperValue());
+	</script>
+
+	<script type="text/javascript">
+		// 2.借用构造函数
+		function SuperType(){
+			this.colors = ['red','blue','yellow']
+		}
+		function SubType(){
+			SuperType.call(this);
+		}
+		var instance1 = new SubType();
+		instance1.colors.push('black');
+		// alert(instance1.colors);
+
+		var instance2 = new SubType();
+		// alert(instance2.colors);
+	</script>
+
+	<script type="text/javascript">
+		// 3.组合继承
+		function SuperType(name){
+			this.name = name;
+			this.colors = ['red','blue','green'];
+		}
+		SuperType.prototype.sayName = function(){
+			alert(this.name);
+		}
+		function SubType(name,age){
+			SuperType.call(this,name);
+			this.age = age;
+		}
+		// 继承方法
+		SubType.prototype = new SuperType();
+		SubType.prototype.constructor = SubType;
+		SubType.prototype.sayAge = function(){
+			alert(this.age);
+		}
+
+		var instance1 = new SubType('xiaoming',22);
+		instance1.colors.push('black');
+		alert(instance1.colors);
+		instance1.sayName();
+		instance1.sayAge();
+
+		var instance2 = new SubType('liming',23);
+		alert(instance2.colors);
+		instance2.sayName();
+		instance2.sayAge();
+	</script>
+
+	<script type="text/javascript">
+		// 4.原型式继承
+		var person = {
+			name: 'xiaoming',
+			friends: ['panghu','xiaofu','daxiong','jingxiang']
+		}
+		var anotherPerson = object(person);
+		anotherPerson.name = 'liming';
+		anotherPerson.friends.push('duolaAmeng');
+
+		alert(person.friends);
+	</script>
+
+	<script type="text/javascript">
+		// 5.寄生式继承
+		function createAnother(original){
+			var clone = object(original);
+			clone.sayHi = function(){
+				alert('Hi');
+			}
+			return clone;
+		}
+	</script>
+</body>
+</html>

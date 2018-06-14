@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		// 1.工厂模式
+		function createPerson(name,age,job) {
+			var o = new Object();
+			o.name = name;
+			o.age = age;
+			o.job = job;
+			o.syaName = function(){
+				alert(this.name)
+			}
+			return o;
+		}
+
+		var person = createPerson('xiaoming',22,'software')
+	</script>
+
+	<script type="text/javascript">
+		//2.构造函数
+		function Person(name,age,job){
+			this.name = name;
+			this.age = age;
+			this.job = job;
+			this.syaName = function(){
+				alert(this.name)
+			}
+		}
+
+		var person1 = new Person('liming',23,'doctor')
+	</script>
+
+	<script type="text/javascript">
+		// 3.原型模式
+		function Person(){
+
+		}
+		Person.prototype.name = 'danni';
+		Person.prototype.age = 29;
+		Person.prototype.job = 'software';
+		Person.prototype/.syaName = function(){
+			alert(this.name);
+		}
+
+		var person1 = new Person();
+	</script>
+
+	<script type="text/javascript">
+		// 4.组合使用构造函数和原型模式
+		function Person(name,age,job){
+			this.name = name;
+			this.age = age;
+			this.job = job;
+			this.friends = ["Shelby","Court"];
+		}
+
+		Person.prototype = {
+			construtype: Person,
+			syaName: function(){
+				alert(this.name)
+			}
+		}
+		var person1 = new Person("xiaoming",33,"dssw")
+	</script>
+
+	<script type="text/javascript">
+		// 5.动态原型模式
+		function Person(name,age,job){
+			this.name = name;
+			this.age = age;
+			this.job = job;
+
+			if (typeof this.sayName != "function") {
+				Person.prototype.sayName = function(){
+					alert(this.name);
+				}
+			}
+		}
+		var friend = new Person('dgr',22,'er')
+	</script>
+
+	<script type="text/javascript">
+		// 6.寄生构造函数模式
+		function Person(name,age,job){
+			var o = new Object();
+			o.name = name;
+			o.age = age;
+			o.job = job;
+			o.sayName = function(){
+				alert(this.name)
+			}
+			return o;
+		}
+		var friend = new Person('gff',22,'ytu')
+	</script>
+</body>
+</html>

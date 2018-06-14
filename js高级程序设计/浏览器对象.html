@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var client = function(){
+			var engine = {
+				// 呈现引擎
+				ie: 0,
+				gecko: 0,
+				webkit: 0,
+				khtml: 0,
+				opera: 0,
+				ver: null
+			};
+
+			return {
+				engine: engine
+			}
+		}();
+
+		if (client.engine.ie) {
+			// 针对IE的代码
+		}else if(client.engine.gecko > 1.5){
+			if (client.engine.ver == '1.8.1') {
+				// 针对这个版本执行某些操作
+			}
+		}
+
+
+		var ua = navigator.userAgent;
+
+		if (window.opera) { // 检测opera
+			engine.ver = window.opera.version();
+			engine.opera = parseFloat(engine.ver);
+		}else if(/AppleWebkit\/(\S+)/.test(ua)){ // 检测webkit
+			engine.ver = RegExp['$1'];
+			engine.webkit = parseFloat(engine.ver);
+		}else if(/KHTML\/(\S+)/.test(ua) || /Konqueror\/([^;]+)/.test(ua)){
+			engine.ver = RegExp['$1'];
+			engine.khtml = parseFloat(engine.ver);
+		}else if(/rv:([^\)]+)\) Gecko\/\d{8}/.test(ua)){ // 检测gecko
+			engine.ver = RegExp['$1'];
+			engine.gecko= parseFloat(engine.ver);
+		}else if(/MSIE ([^;]+)/.test(ua)){ // 检测ie
+			engine.ver = RegExp['$1'];
+			engine.ie = parseFloat(engine.ver);
+		}
+	</script>
+</body>
+</html>
