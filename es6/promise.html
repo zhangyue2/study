@@ -127,5 +127,53 @@
 			console.log(error)
 		})
 	</script>
+	<script>
+    const someAsyncThing = function() {
+      return new Promise(function(resolve, reject) {
+        resolve(x + 2);
+      })
+    }
+
+    someAsyncThing().then(function(){
+      console.log('everything is great');
+    });
+
+    setTimeout(() => { console.log(123)}, 2000);
+	</script>
+
+  <script type="text/javascript">
+    const promise4 = new Promise(function(resolve, reject) {
+      resolve('ok');
+      setTimeout(function(){ throw new Error('test')},0)
+    });
+
+    promise4.then(function(value){
+      console.log(value)
+    })
+  </script>
+
+  <script type="text/javascript">
+    someAsyncThing()
+      .catch((error) => {
+        console.log('oh no ',error);
+      })
+      .then(()=> {
+        console.log('carry on');
+      })
+  </script>
+
+  <script type="text/javascript">
+    // Promise.prototype.finally = function (callback) {
+    //   let P = this.constructor;
+    //   return this.then(
+    //     value => P.resolve(callback()).then(() => value),
+    //     reason => P.reject(callback()).then(() => { throw reason })
+    //   )
+    // }
+  </script>
+
+  <script type="text/javascript">
+
+  </script>
 </body>
 </html>
