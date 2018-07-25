@@ -1235,11 +1235,11 @@ function getNodeAfter(parentNode, node) {
 }
 
 /**
- * Inserts `childNode` as a child of `parentNode` at the `index`.
+ * Inserts `childNode` as a child of `parentNode` at the `index.js`.
  *
  * @param {DOMElement} parentNode Parent node in which to insert.
  * @param {DOMElement} childNode Child node to insert.
- * @param {number} index Index at which to insert the child.
+ * @param {number} index.js Index at which to insert the child.
  * @internal
  */
 var insertChildAt = createMicrosoftUnsafeLocalFunction(function (parentNode, childNode, referenceNode) {
@@ -1940,7 +1940,7 @@ var getMarkupWrap = _dereq_(152);
 var invariant = _dereq_(156);
 
 var OPEN_TAG_NAME_EXP = /^(<[^ \/>]+)/;
-var RESULT_INDEX_ATTR = 'data-danger-index';
+var RESULT_INDEX_ATTR = 'data-danger-index.js';
 
 /**
  * Extracts the `nodeName` from a string of markup.
@@ -1990,7 +1990,7 @@ var Danger = {
 
       // This for-in loop skips the holes of the sparse array. The order of
       // iteration should follow the order of assignment, which happens to match
-      // numerical index order, but we don't rely on that.
+      // numerical index.js order, but we don't rely on that.
       var resultIndex;
       for (resultIndex in markupListByNodeName) {
         if (markupListByNodeName.hasOwnProperty(resultIndex)) {
@@ -2000,7 +2000,7 @@ var Danger = {
           // attribute.  If the markup does not start with a < character, it
           // will be discarded below (with an appropriate console.error).
           markupListByNodeName[resultIndex] = markup.replace(OPEN_TAG_NAME_EXP,
-          // This index will be parsed back out below.
+          // This index.js will be parsed back out below.
           '$1 ' + RESULT_INDEX_ATTR + '="' + resultIndex + '" ');
         }
       }
@@ -2016,7 +2016,7 @@ var Danger = {
           resultIndex = +renderNode.getAttribute(RESULT_INDEX_ATTR);
           renderNode.removeAttribute(RESULT_INDEX_ATTR);
 
-          !!resultList.hasOwnProperty(resultIndex) ? "development" !== 'production' ? invariant(false, 'Danger: Assigning to an already-occupied result index.') : invariant(false) : void 0;
+          !!resultList.hasOwnProperty(resultIndex) ? "development" !== 'production' ? invariant(false, 'Danger: Assigning to an already-occupied result index.js.') : invariant(false) : void 0;
 
           resultList[resultIndex] = renderNode;
 
@@ -2031,7 +2031,7 @@ var Danger = {
 
     // Although resultList was populated out of order, it should now be a dense
     // array.
-    !(resultListAssignmentCount === resultList.length) ? "development" !== 'production' ? invariant(false, 'Danger: Did not assign to every index of resultList.') : invariant(false) : void 0;
+    !(resultListAssignmentCount === resultList.length) ? "development" !== 'production' ? invariant(false, 'Danger: Did not assign to every index.js of resultList.') : invariant(false) : void 0;
 
     !(resultList.length === markupList.length) ? "development" !== 'production' ? invariant(false, 'Danger: Expected markup to render %s nodes, but rendered %s.', markupList.length, resultList.length) : invariant(false) : void 0;
 
@@ -4287,7 +4287,7 @@ function forEachSingleChild(bookKeeping, child, name) {
 /**
  * Iterates through children that are typically specified as `props.children`.
  *
- * The provided forEachFunc(child, index) will be called for each
+ * The provided forEachFunc(child, index.js) will be called for each
  * leaf child.
  *
  * @param {?*} children Children tree container.
@@ -4362,7 +4362,7 @@ function mapIntoWithKeyPrefixInternal(children, array, prefix, func, context) {
 /**
  * Maps children that are typically specified as `props.children`.
  *
- * The provided mapFunction(child, key, index) will be called for each
+ * The provided mapFunction(child, key, index.js) will be called for each
  * leaf child.
  *
  * @param {?*} children Children tree container.
@@ -11143,10 +11143,10 @@ var DOCUMENT_FRAGMENT_NODE_TYPE = 11;
 var instancesByReactRootID = {};
 
 /**
- * Finds the index of the first character
+ * Finds the index.js of the first character
  * that's not common between the two given strings.
  *
- * @return {number} the index of the character where the strings diverge
+ * @return {number} the index.js of the character where the strings diverge
  */
 function firstDifferenceIndex(string1, string2) {
   var minLen = Math.min(string1.length, string2.length);
@@ -11600,10 +11600,10 @@ var flattenChildren = _dereq_(119);
 var invariant = _dereq_(156);
 
 /**
- * Make an update for markup to be rendered and inserted at a supplied index.
+ * Make an update for markup to be rendered and inserted at a supplied index.js.
  *
  * @param {string} markup Markup that renders into an element.
- * @param {number} toIndex Destination index.
+ * @param {number} toIndex Destination index.js.
  * @private
  */
 function makeInsertMarkup(markup, afterNode, toIndex) {
@@ -11619,10 +11619,10 @@ function makeInsertMarkup(markup, afterNode, toIndex) {
 }
 
 /**
- * Make an update for moving an existing element to another index.
+ * Make an update for moving an existing element to another index.js.
  *
- * @param {number} fromIndex Source index of the existing element.
- * @param {number} toIndex Destination index of the element.
+ * @param {number} fromIndex Source index.js of the existing element.
+ * @param {number} toIndex Destination index.js of the element.
  * @private
  */
 function makeMove(child, afterNode, toIndex) {
@@ -11638,7 +11638,7 @@ function makeMove(child, afterNode, toIndex) {
 }
 
 /**
- * Make an update for removing an element at an index.
+ * Make an update for removing an element at an index.js.
  *
  * @param {number} fromIndex Index of the element to remove.
  * @private
@@ -11853,7 +11853,7 @@ var ReactMultiChild = {
       var updates = null;
       var name;
       // `nextIndex` will increment for each child in `nextChildren`, but
-      // `lastIndex` will be the last index visited in `prevChildren`.
+      // `lastIndex` will be the last index.js visited in `prevChildren`.
       var lastIndex = 0;
       var nextIndex = 0;
       var lastPlacedNode = null;
@@ -11905,15 +11905,15 @@ var ReactMultiChild = {
     },
 
     /**
-     * Moves a child component to the supplied index.
+     * Moves a child component to the supplied index.js.
      *
      * @param {ReactComponent} child Component to move.
-     * @param {number} toIndex Destination index of the element.
-     * @param {number} lastIndex Last index visited of the siblings of `child`.
+     * @param {number} toIndex Destination index.js of the element.
+     * @param {number} lastIndex Last index.js visited of the siblings of `child`.
      * @protected
      */
     moveChild: function (child, afterNode, toIndex, lastIndex) {
-      // If the index of `child` is less than `lastIndex`, then it needs to
+      // If the index.js of `child` is less than `lastIndex`, then it needs to
       // be moved. Otherwise, we do not need to move it because a child will be
       // inserted or moved before `child`.
       if (child._mountIndex < lastIndex) {
@@ -17419,7 +17419,7 @@ if (ExecutionEnvironment.canUseDOM) {
         // https://github.com/mishoo/UglifyJS2/blob/v2.4.20/lib/parse.js#L216
         node.innerHTML = String.fromCharCode(0xFEFF) + html;
 
-        // deleteData leaves an empty `TextNode` which offsets the index of all
+        // deleteData leaves an empty `TextNode` which offsets the index.js of all
         // children. Definitely want to avoid this.
         var textNode = node.firstChild;
         if (textNode.data.length === 1) {
@@ -17576,7 +17576,7 @@ function getComponentKey(component, index) {
     // Explicit key
     return wrapUserProvidedKey(component.key);
   }
-  // Implicit key determined by the index in the set
+  // Implicit key determined by the index.js in the set
   return index.toString(36);
 }
 
@@ -17592,7 +17592,7 @@ function escapeUserProvidedKey(text) {
 
 /**
  * Wrap a `key` value explicitly provided by the user to distinguish it from
- * implicitly-generated keys generated by a component's index in its parent.
+ * implicitly-generated keys generated by a component's index.js in its parent.
  *
  * @param {string} key Value of a user-provided `key` attribute
  * @return {string}
