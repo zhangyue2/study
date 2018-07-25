@@ -2,36 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="beda5911-5f1e-4b03-91f4-e22e55c0e93c" name="默认" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webpack/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/.metadata/.log" beforeDir="false" afterPath="$PROJECT_DIR$/java/.metadata/.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/.metadata/.mylyn/.tasks.xml.zip" beforeDir="false" afterPath="$PROJECT_DIR$/java/.metadata/.mylyn/.tasks.xml.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/.metadata/.mylyn/tasks.xml.zip" beforeDir="false" afterPath="$PROJECT_DIR$/java/.metadata/.mylyn/tasks.xml.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/.metadata/.plugins/org.eclipse.core.resources/.history/69/00eb0d45a668001814bb9b9dbb241336" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/.metadata/.plugins/org.eclipse.core.resources/.history/c0/e01388a2486d001813ccabaa3dc660bb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/.metadata/.plugins/org.eclipse.core.resources/.projects/first/.indexes/e4/81/b0/history.index" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/.metadata/.plugins/org.eclipse.core.resources/.projects/first/org.eclipse.jdt.core/state.dat" beforeDir="false" afterPath="$PROJECT_DIR$/java/.metadata/.plugins/org.eclipse.core.resources/.projects/first/org.eclipse.jdt.core/state.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/.metadata/.plugins/org.eclipse.core.resources/.root/5.tree" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" beforeDir="false" afterPath="$PROJECT_DIR$/java/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" beforeDir="false" afterPath="$PROJECT_DIR$/java/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/server-config.json" beforeDir="false" afterPath="$PROJECT_DIR$/java/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/server-config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/.metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt" beforeDir="false" afterPath="$PROJECT_DIR$/java/.metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log" beforeDir="false" afterPath="$PROJECT_DIR$/java/.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/.metadata/.plugins/org.eclipse.recommenders.news.impl/downloads/http%3A%2F%2Fwww.eclipse.org%2Fhome%2Feclipsenews.rss" beforeDir="false" afterPath="$PROJECT_DIR$/java/.metadata/.plugins/org.eclipse.recommenders.news.impl/downloads/http%3A%2F%2Fwww.eclipse.org%2Fhome%2Feclipsenews.rss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/.metadata/version.ini" beforeDir="false" afterPath="$PROJECT_DIR$/java/.metadata/version.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/first/bin/com/first/First.class" beforeDir="false" afterPath="$PROJECT_DIR$/java/first/bin/com/first/First.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/first/src/com/first/First.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/first/src/com/first/First.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react/docs/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react/docs/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react/docs/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react/docs/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react/docs/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/react/docs/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react/docs/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react/docs/src/registerServiceWorker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react/myReact/build/browser.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/react/myReact/build/browser.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react/myReact/build/react.js" beforeDir="false" afterPath="$PROJECT_DIR$/react/myReact/build/react.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/react/react-demos" beforeDir="false" afterPath="$PROJECT_DIR$/react/react-demos" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/文档/弹窗.md" beforeDir="false" afterPath="$PROJECT_DIR$/文档/弹窗.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack/demo2/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/webpack/demo2/dist/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -49,16 +23,7 @@
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="4" selection-start-column="4" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/react/docs/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="15" lean-forward="true" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
+              <caret column="17" lean-forward="true" selection-start-column="17" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -111,6 +76,9 @@
         <option value="$PROJECT_DIR$/webpack/demo/package.json" />
         <option value="$PROJECT_DIR$/webpack/demo/webpack.config.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/webpack/demo2/.gitignore" />
+        <option value="$PROJECT_DIR$/webpack/demo2/dist/index.html" />
+        <option value="$PROJECT_DIR$/webpack/.gitignore" />
       </list>
     </option>
   </component>
@@ -159,31 +127,7 @@
             <path>
               <item name="学习" type="b2602c69:ProjectViewProjectNode" />
               <item name="学习" type="462c0819:PsiDirectoryNode" />
-              <item name="react" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="学习" type="b2602c69:ProjectViewProjectNode" />
-              <item name="学习" type="462c0819:PsiDirectoryNode" />
-              <item name="react" type="462c0819:PsiDirectoryNode" />
-              <item name="docs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="学习" type="b2602c69:ProjectViewProjectNode" />
-              <item name="学习" type="462c0819:PsiDirectoryNode" />
               <item name="webpack" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="学习" type="b2602c69:ProjectViewProjectNode" />
-              <item name="学习" type="462c0819:PsiDirectoryNode" />
-              <item name="webpack" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="学习" type="b2602c69:ProjectViewProjectNode" />
-              <item name="学习" type="462c0819:PsiDirectoryNode" />
-              <item name="webpack" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="学习" type="b2602c69:ProjectViewProjectNode" />
@@ -307,12 +251,12 @@
       <workItem from="1532319502447" duration="14905000" />
       <workItem from="1532401060822" duration="2396000" />
       <workItem from="1532484075510" duration="16582000" />
-      <workItem from="1532507908456" duration="526000" />
+      <workItem from="1532507908456" duration="1333000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36591000" />
+    <option name="totallyTimeSpent" value="37398000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -324,10 +268,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="517" y="7" width="817" height="735" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.35301667" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20461309" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3293718" />
       <window_info anchor="bottom" id="调试" order="7" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
@@ -602,13 +545,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webpack/demo2/dist/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="23" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webpack/demo2/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -658,10 +594,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/webpack/demo2/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack/demo2/dist/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="4" selection-start-column="4" selection-end-column="4" />
+          <caret column="17" lean-forward="true" selection-start-column="17" selection-end-column="17" />
         </state>
       </provider>
     </entry>
