@@ -6,11 +6,38 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>title</title>
-  <script src="https://webapi.amap.com/maps?v=1.4.8&key=450aacc9d861f105dcd645d385c0a313"></script>
+  <link rel="stylesheet" href="https://cache.amap.com/lbs/static/main1119.css"/>
+
 </head>
 <body>
-  <p>image</p>
-  <div id="main"></div>
-  <div id="container"></div>
+  <div id="loading"></div>
+  <div id="login" style="display: none">
+    <div>
+      <img class="mainlogo">
+      <form>
+        <div class="input-group">
+          <span class="input-group-addon">
+            <i class="icon iconfont icon-people_fill"></i>
+          </span>
+          <input type="text" class="form-control" name="username" id="username">
+        </div>
+        <div class="input-group">
+          <span class="input-group-addon">
+            <i class="icon iconfont icon-lock_fill"></i>
+          </span>
+          <input type="password" class="form-control" name="password" id="password">
+        </div>
+        <button type="button" class="btn">登录</button>
+      </form>
+    </div>
+  </div>
+  <div id="content" style="display: none">
+    <header>xxxxxx</header>
+    <div id="map"></div>
+    <div id="pie">
+      <div id="right-top"></div>
+      <div id="right-bottom"></div>
+    </div>
+  </div>
 </body>
 </html>
